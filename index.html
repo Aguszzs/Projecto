@@ -4,16 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GR</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/normalize.css">
 </head>
 <body>
     <header>
        <nav>
-        <ul>
-            <li>Inicio</li>
-            <li></li>
+        <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><input type="text"></li>
+            <li><a href="#">Acerca de</a></li>
         </ul>
        </nav> 
     </header>
+    <main>
+        <section class="banner">
+            <h1>Bienvenidos a Gamerank</h1>
+        </section>
+        <table class="tabla1"> <!--Tabla mas juegados del momento-->
+            <h3>Top 3 del momento</h3>
+            <thead>
+            <tr>
+               <th>Juego</th>
+               <th>Usuarios en linea</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="juego1"> <!--zona donde se ponen las imagenes de juegos y usuarios
+                         simultaneos desde BD-->
+                    <td><img src="#" alt="G1"></td>
+                    <td>nombre</td> <!--nombre del juego desde bd-->
+                    <td>000</td> <!--cantidad de jugadores desde bd-->
+                </tr>
+                <tr class="juego2">
+                    <td><img src="#" alt="G2"></td>
+                    <td>nombre</td>
+                    <td>000</td>
+                </tr>
+                <tr class="juego3">
+                    <td><img src="#" alt="G3"></td>
+                    <td>nombre</td>
+                    <td>000</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tabla2">
+            <h3>Top 3 semanal</h3>
+            <thead>
+                <tr>
+                    <th>Juego</th>
+                    <th>Pico Usuarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="juegos1">
+                    <td><img src="#" alt="GS1"></td>
+                    <td>nombre</td>
+                    <td>000</td>
+                </tr>
+                <tr class="juegos2">
+                    <td><img src="#" alt="GS2"></td>
+                    <td>nombre</td>
+                    <td>000</td>
+                </tr>
+                <tr class="juegos3">
+                    <td><img src="#" alt="GS3"></td>
+                    <td>nombre</td>
+                    <td>000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p class="copy">Pagina hecha por &copy; <a href="https://linktr.ee/Agozz" target="bl
+            ">Agustin Sartori</a> <a href="#">Nahuel Mansicidor</a> <a href="#">Juan Ramirez</a></p>
+        <p></p>
+    </footer>
 </body>
+
 </html>
