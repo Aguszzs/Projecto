@@ -1,7 +1,82 @@
-*{
-    background-color: #eee;
+@font-face {
+    font-family: Fuente;
+    src: url(/kremlin.ttf);
 }
-
+body{
+    background-image: url(/img/download.jpg);
+    background-size: cover;
+    background-position: center;
+}
 header{
-    background-c;
+    background-image: url("/img/nav.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+    box-shadow: 0 0 10px rgb(132, 179, 136);
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+}
+.menu li{
+    list-style: none;
+    margin-right: 0 ;
+    margin-left: -20px;
+    padding-right: 20px;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Fuente';
+    color: #eee;
+    margin-right: 20px
+}
+.logo{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    margin-top: -70px;
+    margin-bottom: -40px;
+}
+.banner{
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.banner h1{
+    font-family: 'Fuente';
+    color: #1E5128;
+}
+.tabla1 td{
+    color: #eee;
+}
+.tabla2 td{
+    color: #eee;
+}
+.tablanoti td{
+    color: #eee;
+}
+h3{
+    color: #eee;
+}
+h4{
+    color: #eee;
+}
+footer{
+    background-image: url("/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.copy a{
+    color:white;
+    text-decoration: none;
+}
+.copy a:hover{
+    color: #f2e8e8d9;
+    transition: all 0.5s ease;
 }
