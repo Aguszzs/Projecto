@@ -1,6 +1,143 @@
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: titular;
+    src: url("/Font-title.ttf");
+}
+@font-face {
+    font-family: cuerpo;
+    src: url("/Font.ttf");
+}
+body{
+    background-color: #27374D;
+}
+header{
+    position:absolute;
+    width: 100%;
+    margin-top: -1px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    padding-left: 2rem;
+}
+.menu li{
+    margin-right: 20px;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "cuerpo";
+    color: #9DB2BF;
+    text-shadow: 0 0 20px #526D82;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: #526D82;
+    text-shadow: 0 0 25px #6a8fab;
+    transition: all 0.3s ease;
+}
+.banner{
+    margin-top: -1px;
+    padding: 200px;
+    background-image: url("/img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px #1b2838;
+
+}
+/*.banner:hover{
+    background-image: url("/img/fondo\ 2.jpg");
+    transition: all 0.2s ease;
+    background-position: center;
+    background-size: cover;
+}*/
+h1{
+    font-family: "titular";
+    text-shadow: 0 0 5px #526D82;
+}
+h1:hover{
+    text-decoration: underline;
+    color: black;
+    text-shadow: 0 0 7px #6a8fab;
+    transition: all 0.4s ease;
+}
+.relleno{
+ margin-top: 20px;
+}
+.relleno p{
+    font-family: "cuerpo";
+    text-align: center;
+    font-size: 25px;
+    color: #9DB2BF;
+}
+h3{
+    padding-right: 1000px;
+    text-align: center;
+    font-family: "titular";
+    text-decoration: underline;
+    text-shadow: 0 0 5px #526D82;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+table{
+
+    background-color: #233144;
+    border-radius: 5%;
+    max-width: 60rem;
+}
+table th{
+ font-family: "cuerpo";
+ margin-left: 20px;
+ padding-right: 50px;
+ padding-left: 400px;
+ font-size: 40px;
+ text-shadow: 0 0 5px #526D82;
+ color: #DDDDDD;
+ padding-top: 100px;
+}
+table td{
+    font-size: 50px;
+    font-family: "cuerpo";
+    color: #DDDDDD;
+    padding: 50px;
+}
 img{
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     width: 400px;
     height: 200px;
+}
+aside{
+    top: 50%;
+    width: 500px;
+    height: 300px;
+    transform: translateY(-50%);        /*arreglar aside*/
+    position:sticky;
+    padding: 500px;
+}
+aside h4{
+    font-family: "titular";
+    color: #DDDDDD;
+    font-size: 20px;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+}
+footer a,p{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: "cuerpo";
+    color: #9DB2BF;
+    text-shadow: 0 0 5px #526D82;
+}
+footer a:hover{
+    text-shadow: 0 0 20px #6a8fab;
+    text-decoration: underline;
+    transition: all 0.5s ease;
 }
