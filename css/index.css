@@ -177,8 +177,8 @@ td {
   text-align: center;
   border: 1px solid #28374d;;
   background-color: #233144;
-  color: #000;
-  text-shadow: 0 0 20px #3c5060;
+  color: white;
+  text-shadow: 0 0 20px #526D82;
 }
 
 th {
@@ -225,7 +225,8 @@ th {
 }
 .noti_cont a{
   text-decoration: none;
-  color: black;
+  color: white;
+  text-shadow: 0 0 20px #526D82;;
 }
 
 .noticias h3{
