@@ -5,117 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steamzone</title>
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
   </head>
+
   <body id="inicio">
     <header>
-      <nav>
-        <ul class="menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="/buscar.html">Buscar</a></li>
-          <li><a href="/about.html">Acerca de</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="title-name">
+          <h1>Steamzone</h1>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="/buscar.html">BUSCAR</a></li>
+            <li><a href="/about.html">ACERCA DE</a></li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#top_dia">TOP DIARIO</a></li>
+            <li><a href="#top_sem">TOP SEMANAL</a></li>
+            <li><a href="#noticias">NOTICIAS</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <section class="banner">
-        <h1>⦓Steamzone⦔</h1>
+      <section class="banner"></section>
+
+      <section class="relleno">
+        <div class="container">
+          <h2>¿Qué hacemos?</h2>
+          <p>
+            Nuestra página de juegos de Steam te permite encontrar fácilmente
+            una amplia variedad de juegos disponibles en la plataforma. Podes
+            ver si te arrancan la cabeza con el precio y acceder a descripciones
+            detalladas y capturas de pantalla. También te mantenemos actualizado
+            con noticias y reseñas. ¡Encuentra el juego perfecto para ti en
+            nuestra página!
+          </p>
+        </div>
       </section>
-      <section class="relleno"><p>
-        Nuestra página de juegos de Steam te permite encontrar
-        fácilmente una amplia variedad de juegos disponibles en la plataforma.<br>
-        Podes ver si te arrancan la cabeza con el precio y
-        acceder a descripciones detalladas y capturas de pantalla.<br>
-        También te mantenemos actualizado con noticias y reseñas. ¡Encuentra el
-        juego perfecto para ti en nuestra página!
-      </p>
-    </section>
+
       <section class="topmomento">
-        <table>
-          <!--Tabla mas jugados del momento-->
-          <h3>✶Top 3 del momento✶</h3>
-          <thead>
-            <tr>
-              <th>Juego</th>
-              <th>Usuarios en linea</th>
-            </tr>
-          </thead>
-          <tbody id="tabla_diaria">
-            <tr class="juego1">
-           <td><img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg" alt="G1" /></td>
-            <td>nombre</td>
-            <td>000</td>
-          </tr>                                         <!--se muestra un ejemplo de como iria-->
-          <tr class="juego2">
-            <td><img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg" alt="G2" /></td>
-            <td>nombre</td>
-            <td>000</td>
-          </tr>
-          <tr class="juego3">
-            <td><img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg" alt="G3" /></td>
-            <td>nombre</td>
-            <td>000</td>
-          </tr>
-          </tbody>
-        </table>
+        <div class="container">
+          <h3 id="top_dia">✶Top 3 del momento✶</h3>
+          <table class="top">
+            <!--Tabla mas jugados del momento-->
+
+            <thead>
+              <tr>
+                <th>Juego</th>
+                <th>Usuarios</th>
+              </tr>
+            </thead>
+            <tbody id="tabla_diaria">
+              <tr class="juego1">
+                <td>
+                  <img
+                    src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                    alt="G1"
+                  />
+                </td>
+                <td>3500</td>
+              </tr>
+              <!--se muestra un ejemplo de como iria-->
+              <tr class="juego2">
+                <td>
+                  <img
+                    src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                    alt="G2"
+                  />
+                </td>
+                <td>2480</td>
+              </tr>
+              <tr class="juego3">
+                <td>
+                  <img
+                    src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                    alt="G3"
+                  />
+                </td>
+                <td>870</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
+
       <section class="topsemanal">
-        <table>
-          <h3>✶Top 3 semanal✶</h3>
-          <thead>
-            <tr>
-              <th>Juego</th>
-              <th>Pico Usuarios</th>
-            </tr>
-          </thead>
-          <tbody id="tabla_semanal">
-            <tr class="juegos1">
-            <td><img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg" alt="GS1" /></td>
-            <td>nombre</td>
-            <td>000</td>
-          </tr>
-          <tr class="juegos2">                            <!--se muestra un ejemplo de como iria-->
-            <td><img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg" alt="GS2" /></td>
-            <td>nombre</td>
-            <td>000</td>
-          </tr>
-          <tr class="juegos3">
-            <td><img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg" alt="GS3" /></td>
-            <td>nombre</td>
-            <td>000</td>
-          </tr>
-          </tbody>
-        </table>
+        <div class="container">
+          <h3 id="top_sem">✶Top 3 semanal✶</h3>
+          <table class="top">
+            <thead>
+              <tr>
+                <th>Juego</th>
+                <th>Usuarios</th>
+              </tr>
+            </thead>
+            <tbody id="tabla_semanal">
+              <tr class="juegos1">
+                <td>
+                  <img
+                    src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                    alt="GS1"
+                  />
+                </td>
+                <td>134200</td>
+              </tr>
+              <tr class="juegos2">
+                <!--se muestra un ejemplo de como iria-->
+                <td>
+                  <img
+                    src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                    alt="GS2"
+                  />
+                </td>
+                <td>123600</td>
+              </tr>
+              <tr class="juegos3">
+                <td>
+                  <img
+                    src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                    alt="GS3"
+                  />
+                </td>
+                <td>110820</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
-    </main>
-    <aside>
-      <table>
+      <div class="noticias">
+        <h3 id="noticias">✶Noticias✶</h3>
+        <p>Clickeala para ir al sitio</p>
+      <table class="noti">
         <thead>
-          <h4>Noticias</h4>
           <tr>
-            <td>en progreso,<br>esto iria de este lado ---></td>
+            <td>en progreso</td>
+            <td>noticias</td>
           </tr>
         </thead>
         <tbody id="tabla_noticias">
-          <!--<tr>
-          <td><img src="#" alt="Not1" /></td>
-          <td>Noticia1</td>
-        </tr>                                         se comenta un ejemplo de como iria, en este caso se pude agregar mas noticias, depende de la bd
+          <tr>
+          <td><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1683566799" alt="Not1" /></td>
+          <td class="noti_cont">Noticia1</td>
+        </tr>                                         
         <tr>
-          <td><img src="#" alt="Not2" /></td>
-          <td>Noticia2</td>
-        </tr>-->
+          <td><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1683566799" alt="Not2" /></td>
+          <td class="noti_cont"><a href="https://store.steampowered.com/news/app/730?l=spanish&emclan=103582791432902485&emgid=3702568031467132888" target="bla
+            ">Goodbye Wheel</a></td>
+        </tr>
         </tbody>
       </table>
-    </aside>
+      </div>
+    </main>
     <footer>
-      <p class="copy">
-        Pagina hecha por &copy;
-        <a href="https://linktr.ee/Agozz" target="_blank">Agustin Sartori</a>
-        <a href="#" target="_blank">Nahuel Mansicidor</a>
-        <a href="#" target="_blank">Juan Ramirez</a>
-      </p>
+      <div class="container">
+        <p class="copy">
+          Pagina hecha por &copy;
+          <a href="https://linktr.ee/Agozz" target="_blank">Agustin Sartori</a>
+          <a href="#" target="_blank">Nahuel Mansicidor</a>
+          <a href="#" target="_blank">Juan Ramirez</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
