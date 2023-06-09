@@ -80,9 +80,11 @@ header nav {
 ul{ 
   display: inline;
 }
+
 li{
   padding-bottom: 1em;
 }
+
 header a {
   padding: 5px 12px;
   text-decoration: none;
@@ -124,6 +126,7 @@ h1 {
   font-family: "titular";
 
 }
+
 h1:hover{
   text-decoration: underline;
   color: black;
@@ -208,12 +211,14 @@ th {
 .noticias{
   margin-top: 3em;
 }
+
 .noticias p{
   text-align: center;
   background-color: #171a21;
   color: white;
   text-shadow: 0 0 20px #526D82;
 }
+
 .noti {
   width: 25.85em;
   height: 30em;
@@ -221,10 +226,8 @@ th {
   margin: 0 auto;
   background-color: #233144;
 }
-.noti_cont{
-  padding: 10em;
-}
-.noti_cont a{
+
+.noti a{
   text-decoration: none;
   color: white;
   text-shadow: 0 0 20px #526D82;;
@@ -245,6 +248,7 @@ footer{
   max-width: 100%;
   background-color: black;
 }
+
 footer p {
   margin: 0;
   padding: 12px;
@@ -270,6 +274,7 @@ footer .container {
     background-color: #27374D;
     margin: 0;
   }
+
   header nav {
     display: flex;
     flex-direction: row;
@@ -277,24 +282,31 @@ footer .container {
     padding-bottom: 20px;
     justify-content: center;
   }
+
   ul{ 
     display: flex;
   }
+
   table th {
     background-color: #233144;
   }
+
   .container{
     max-width: 100%;
   }
+
   .top{
     width: 50em;
   }
+
   .noti{
     width: 50em;
   }
+
   footer{
     max-width: 100%;
   }
+
   footer a:hover{
     text-shadow: 0 0 20px #7cadd3;
     text-decoration: underline;
