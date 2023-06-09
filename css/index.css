@@ -46,8 +46,7 @@ li {
 /*Mobile*/
 
 .container {
-  max-width: 1400px;
-  margin: auto;
+  margin: 0;
 }
 
 /*Header*/
@@ -74,13 +73,15 @@ header .container {
 header nav {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  padding-bottom: 20px;
   justify-content: center;
+  text-align: center;
 }
 
 ul{ 
-  display: flex;
+  display: inline;
+}
+li{
+  padding-bottom: 1em;
 }
 header a {
   padding: 5px 12px;
@@ -164,7 +165,7 @@ h1:hover{
 }
 
 .top {
-  width: 30em;
+  width: 25.85em;
   height: 20em;
   border-collapse: collapse;
   margin: 0 auto;
@@ -187,7 +188,7 @@ th {
 
 /*Top semanal*/
 .topsemanal h3 {
-  margin-top: 3em;
+  margin-top: 1em;
   background-color: #171a21;
   color: white;
   text-shadow: 0 0 20px #526D82;
@@ -214,7 +215,7 @@ th {
   text-shadow: 0 0 20px #526D82;
 }
 .noti {
-  width: 40em;
+  width: 25.85em;
   height: 30em;
   border-collapse: collapse;
   margin: 0 auto;
@@ -264,11 +265,21 @@ footer .container {
   align-items: flex-end;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 839px) {
   body {
     background-color: #27374D;
+    margin: 0;
   }
-
+  header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+  ul{ 
+    display: flex;
+  }
   table th {
     background-color: #233144;
   }
@@ -278,7 +289,9 @@ footer .container {
   .top{
     width: 50em;
   }
-  
+  .noti{
+    width: 50em;
+  }
   footer{
     max-width: 100%;
   }
