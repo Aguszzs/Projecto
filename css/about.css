@@ -1,0 +1,162 @@
+@font-face {
+    font-family: titular;
+    src: url("/Font-title.ttf");
+  }
+  @font-face {
+    font-family: cuerpo;
+    src: url("/Font.ttf");
+  }
+  
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #27374d;
+    font-family: cuerpo;
+    margin: 0;
+  }
+
+/*Diseño general*/
+
+h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.7em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.25em;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    font-size: 1.25em;
+  }
+  
+  /*Mobile*/
+  
+  .container {
+    margin: 0;
+  }
+
+  /*Header*/
+
+header {
+    background-color: black;
+    padding: 1em;
+  }
+  
+  header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+  }
+  
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  ul{ 
+    display: inline;
+  }
+  
+  li{
+    padding-bottom: 1em;
+  }
+  
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 5px #68879e;
+  }
+  
+  .menu a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 10px #6a8fab;
+    transition: all 0.3s ease;
+    color: black;
+  }
+  
+  /*Banner*/
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 49vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  h1 {
+    text-align: center;
+    text-shadow: 0 0 5px #526D82;
+    font-family: "titular";
+  
+  }
+  
+  h1:hover{
+    text-decoration: underline;
+    color: black;
+    text-shadow: 0 0 7px #6a8fab;
+    transition: all 0.4s ease;
+  }
+
+  /*Footer*/
+footer{
+    max-width: 100%;
+    background-color: black;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 12px;
+    color: #9DB2BF;
+    background-color: black;
+    font-size: 1.11em;
+  }
+  
+  footer a {
+    color: #9DB2BF;
+    text-shadow: 0 0 10px #526D82;
+    text-decoration: none;
+  }
+  footer .container {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
