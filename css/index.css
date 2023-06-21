@@ -201,14 +201,6 @@ th {
   font-size: 1.7em;
 }
 
-/*Aside*/
-
-/*aside {            
-  margin-top: 10em;
-}*/
-
-   /*Noticias*/
-
 .noticias{
   margin-top: 3em;
 }
@@ -247,6 +239,7 @@ font-size: 1.7em;
 }
 
 /*Footer*/
+
 footer{
   max-width: 100%;
   background-color: black;

@@ -1,41 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steamzone</title>
-    <link rel="stylesheet" href="/css/buscar.css">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="shortcut icon" href="/favicon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/buscar.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="shortcut icon" href="/favicon.png" />
+  </head>
+  <body>
     <header>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="/buscar.html">Buscar</a></li>
-            <li><a href="/about.html">Acerca de</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <h1>Busca tu juego</h1>
-        <div class="busqueda">
-            <form>
-                <input type="text">
-                <input type="submit" value="Buscar">
-            </form>
-            
+      <h1>Steamzone</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="/about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner"></section>
+
+      <section class="relleno">
+        <div class="container">
+          <h2>Utilizacion de esta pagina</h2>
+          <p>
+            En esta seccion de la pagina, nosotros queremos que puedas encontrar
+            datos del juego que te guste o interese, datos como: Puntuacion en
+            las reseñas, precio, imagenes y videos. Basicamente que puedas darte
+            una idea de lo que te interesa o como le va a tu juego favorito.
+          </p>
         </div>
-      </main>
-      <footer>
-        <p class="copy">
-          Pagina hecha por &copy;
-          <a href="https://linktr.ee/Agozz" target="_blank">Agustin Sartori</a>
-          <a href="#" target="_blank">Nahuel Mansicidor</a>
-          <a href="#" target="_blank">Juan Ramirez</a>
-        </p>
-      </footer>
-</body>
+      </section>
+
+      <div class="buscar-title"><h2>Busca tu juego</h2></div>
+
+      <div class="buscar-container">
+        <form action="#" method="get">
+          <input type="text" placeholder="Buscar..." name="search" />
+          <button type="submit">🔍︎</button>
+        </form>
+      </div>
+
+      <div class="contenedor">
+        <table class="tabla-informacion">
+          <thead><tr>
+            <th><h3>Información del Juego</h3></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Ark Survival Evolved"</td>
+          </tr>
+          <tr>
+            <td>Fecha de lanzamiento:<br />27 AGO 2017</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="https://img.asmedia.epimg.net/resizer/51vbyKPNeXabuP_DJTGrXABVj7g=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/OCZHFAEUNFGTVBZPIPYPKNASTA.jpg"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Precio:<h5 class="price">ARS$224.99</h5></td>
+          </tr>
+          <tr>
+            <td>Jugadores En Linea:<br><h6>30491</h6></td>
+          </tr>
+
+          <tr>
+            <td class="descripcion-juego">
+              <p>
+                Sobrevive al pasado. Domar el futuro. Repentinamente despertado
+                en un mundo primitivo lleno de dinosaurios y humanos que luchan
+                por el dominio, debes unirte a héroes legendarios para
+                enfrentarte a poderosas fuerzas oscuras.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Reseñas generales:<br/><h5 class="ratinggood">Muy positivas</h5><br><h5 class="ratingbad">Muy Negativas</h5></td>
+          </tr>
+
+          <tr>
+            <td>Desarrollador: Studios Wildcard</td>
+          </tr>
+        </tbody>
+        </table>
+
+        <table class="tabla-noticias">
+          <thead>
+          <tr>
+            <th><h3>Noticias</h3></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><h4>Community Crunch 366: Introducing Fasolasuchus!</h4><br><p>Autor: ARK: Survival Evolved<br><a
+              href="https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5896948309844709426"target="_blank">Ir a la noticia</a></p></td>
+          </tr>
+          <tr>
+            <td><h4>Community Crunch 365: ASA Structure Comparison, Creature Vote, and More!</h4><br><p>Autor: ARK: Survival Evolved<br><a href="https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5129083846344281368" target="_blank">Ir a la noticia</a></p></td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copy">
+        Pagina hecha por &copy;
+        <a href="https://linktr.ee/Agozz" target="_blank">Agustin Sartori</a>
+        <a href="https://linktr.ee/nawuu" target="_blank">Nahuel Mansicidor</a>
+        <a href="http://linktr.ee/juan_rmz" target="_blank">Juan Ramirez</a>
+      </p>
+    </footer>
+  </body>
 </html>

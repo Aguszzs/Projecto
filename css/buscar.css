@@ -22,13 +22,14 @@
     margin: 0;
   }
 
+
 /*Diseño general*/
 
 h1 {
     font-size: 3.5em;
   }
   h2 {
-    font-size: 2.7em;
+    font-size: 2em;
   }
   h3 {
     font-size: 2em;
@@ -51,19 +52,25 @@ h1 {
 
   /*Header*/
 
-header {
+  header {
     background-color: black;
     padding: 1em;
   }
+
+  h1 {
+    text-align: center;
+    text-shadow: 0 0 5px #526D82;
+    font-family: "titular";
   
-  header .logo {
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: blueviolet;
-    font-size: 1.6em;
   }
-  
+
+  h1:hover{
+    text-decoration: underline;
+    color: black;
+    text-shadow: 0 0 7px #6a8fab;
+    transition: all 0.4s ease;
+  }
+
   header .container {
     display: flex;
     flex-direction: column;
@@ -77,7 +84,7 @@ header {
     text-align: center;
   }
   
-  ul{ 
+ ul .menu{ 
     display: inline;
   }
   
@@ -119,20 +126,176 @@ header {
     background-size: cover;
     background-position: center center;
   }
-  
-  h1 {
-    text-align: center;
-    text-shadow: 0 0 5px #526D82;
-    font-family: "titular";
-  
+
+  /*relleno*/
+
+  .relleno {
+    margin-top: 4em;
+    color: white;
   }
   
-  h1:hover{
+  .relleno h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    background-color: #171a21;
+    padding: 1em;
+    text-shadow: 0 0 10px #526D82;
+  }
+  .relleno p {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+
+  .buscar-title{
+    color: white;
+    margin-top: 4em;
+  }
+
+  .buscar-title h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    background-color: #171a21;
+    padding: 1em;
+    text-shadow: 0 0 10px #526D82;
+  }
+  
+   /*Busqueda*/
+
+  .buscar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: lightblue; /* Color de fondo azul claro */
+    font-size: 24px; /* Tamaño de fuente de 24px */
+    width: 83%;
+  }
+  
+  button[type="submit"] {
+    background-color: #223145; /* Color de fondo negro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 24px; /* Tamaño de fuente de 24px */
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 0.8; /* Opacidad reducida al pasar el cursor sobre el botón */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #181431;
+  } 
+
+   /*Game info*/
+
+   .contenedor {
+    display: inline;
+  }
+
+  th td {
+    text-align: left;
+    border-collapse: collapse;
+    color: white;
+    font-size: 1em;
+  }
+  
+  h3{
+    font-size: 1em;
     text-decoration: underline;
-    color: black;
-    text-shadow: 0 0 7px #6a8fab;
-    transition: all 0.4s ease;
-  }  
+  }
+  .tabla-informacion {
+    width: 25.85em;
+    height: 20em;
+    font-size: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #233144;
+    margin-bottom: 2em;
+  }
+  .tabla-informacion th, td {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #28374d;;
+    background-color: #233144;
+    color: white;
+    text-shadow: 0 0 20px #526D82;
+  }
+
+  .descripcion-juego p {
+    margin: 0 auto;
+  }
+
+  .tabla-informacion p{
+    font-size: 0.8em;
+  }
+
+  .tabla-informacion tr{
+    padding-top: 2em;
+
+  }
+  .price{
+    font-size: 1.5em;
+    color: #03C988;
+  }
+  .ratingbad{
+    font-size: 1.5em;
+    color: #CD1818;
+  }
+  .ratinggood{
+    font-size: 1.5em;
+    color: #03C988;
+  }
+  h6{
+   font-size: 1.5em; 
+   color: #F5EDED;
+   text-shadow: 0 0 10px #9289ca;
+  }
+
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+
+
+  /*Noticias & parches*/
+
+  .tabla-noticias {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabla-noticias h3{
+    color: white;
+    text-shadow: 0 0 20px #526D82;
+    background-color: #233144;
+    text-decoration: underline;
+  }
+
+  .tabla-noticias a {
+    color: white;
+    text-shadow: 0 0 10px #526D82;
+    text-decoration: underline;
+  }
+  
+  .tabla-noticias h4{
+    text-decoration: underline;
+    color: #7cadd3;
+    text-shadow: 0 0 2px #171a21 ;
+    font-size: 1.5em;
+  }
 
   /*Footer*/
 footer{
@@ -160,3 +323,56 @@ footer{
     align-items: flex-end;
   }
   
+
+  @media screen and (min-width: 839px) {
+    
+    h2{
+      font-size: 2.7em;
+    }
+
+    body {
+      background-color: #27374D;
+      margin: 0;
+    }
+  
+    header nav {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding-bottom: 20px;
+      justify-content: center;
+    }
+
+    ul{ 
+      display: flex;
+    }
+
+    .contenedor {
+      display: flex;
+    }
+
+    .tabla-informacion{
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .tabla-noticias {
+      width: 50%;
+    }
+
+    .tabla-noticias h3{
+      text-decoration: underline;
+      font-size: 2.7em;
+    }
+
+    footer{
+      max-width: 100%;
+    }
+    
+    footer a:hover{
+      text-shadow: 0 0 20px #7cadd3;
+      text-decoration: underline;
+      transition: all 0.5s ease;
+    }
+
+  }

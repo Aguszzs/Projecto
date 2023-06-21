@@ -134,6 +134,92 @@ header {
     transition: all 0.4s ease;
   }
 
+  .relleno {
+    margin-top: 4em;
+    color: white;
+    margin-bottom: 5em;
+  }
+  
+  .relleno h2 {
+    text-align: center;
+    background-color: #171a21;
+    padding: 1em;
+    text-shadow: 0 0 10px #526D82;
+  }
+  .relleno p {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+
+  /*About*/
+
+.table-about {
+    display: inline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  table {
+    background-color: #526D82;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    align-items: center;
+    border-collapse: collapse;
+    border-radius: 10%;
+
+  }
+
+  h5{
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 0 20px #9DB2BF;
+    text-decoration: underline;
+  }
+  
+  th, td {
+    padding: 8px;
+          }
+    
+    .agus{
+      background-image: url("https://vsthemes.org/uploads/posts/2021-03/1616950071_skrinshot-28-03-2021-21_45_32.webp");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #F4ABC4;
+      text-shadow: 0 0 2px black;
+      box-shadow: 0 0 10px #F4ABC4;
+    }
+    .agus h5{
+      text-shadow: #F4ABC4;
+    }
+
+    .juan{
+      background-image: url("https://i.pinimg.com/550x/8b/50/33/8b5033a4179465e6e9609709b49190d5.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 10px #FFD0D0;
+    }
+    .juan td{
+      color: #FFD0D0;
+      text-shadow: 0 0 2px black;
+    }
+
+    .nahu{
+      background-image: url("https://images4.alphacoders.com/637/637345.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-shadow: 0 0 5px #85429a;
+      color: #E384FF;
+      box-shadow: 0 0 10px #E384FF;
+    }
+    .nahu h5{
+      text-shadow: 0 0 20px #FFA3FD;
+    }
+
   /*Footer*/
 footer{
     max-width: 100%;
@@ -160,3 +246,28 @@ footer{
     align-items: flex-end;
   }
   
+  @media screen and (min-width: 839px){
+    header nav {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding-bottom: 20px;
+      justify-content: center;
+    }
+    
+    ul{ 
+      display: flex;
+    }
+
+    .table-about{
+      display: flex;
+      justify-content: center;
+   }
+
+   table{
+    width: 30%;
+   }
+   table h5{
+    padding-bottom: 2em;
+   }
+}
